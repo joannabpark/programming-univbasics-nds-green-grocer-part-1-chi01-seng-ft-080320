@@ -20,11 +20,13 @@ new_cart_item = find_item_by_name_in_collection(cart[counter][:item], new_array)
       :item => cart[counter][:item],
       :price => cart[counter][:price],
       :clearance => cart[counter][:clearance],
-      :count => cart[counter][:count]
+      :count => 1
     }
+    new_array << new_cart_item
   end
     counter += 1
   end
+  new_array
 end
 
 
